@@ -30,8 +30,8 @@ public class Api {
 	@PostMapping(value = "/storeTheData")
 	public ResponseEntity<String> validUser(@RequestBody Data data) throws Exception{
 		try {
-			System.out.println(data);
 			String[] books = data.getBookIds();
+			System.out.println(books);
 			for(String s : books) {
 				System.out.println(s);
 			}
